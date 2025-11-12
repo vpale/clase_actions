@@ -1,1 +1,13 @@
 name: Enviar saludo
+on:
+  workflow_dispatch
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar saludo
+        run: echo "Hola desde la clase GitHub Actions"
+
+      - name: Mostrar ubicación
+        run: pwd
